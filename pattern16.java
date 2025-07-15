@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class pattern16
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) throws Exception
+	{
+		System.out.print("enter the n value:");
+		int n=sc.nextInt();
+		for (int i=0;i<n ;i++ )
+		{
+			int a=1;
+			for (int j=0;j<n ;j++ )
+			{
+				if ( i>=j && i+j>=n-1)
+				{
+					System.out.print(a++ +" ");
+				}
+				else{
+					System.out.print("  ");
+				}
+				Thread.sleep(10);
+			}
+			System.out.println();
+			
+		}
+		
+	}
+}
